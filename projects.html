@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects • Md Fazley Rafy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Md Fazley Rafy</h1>
+        <p>Projects</p>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h2>Selected Projects</h2>
+    <p class="muted">Each card can link to a detailed project page later (e.g., projects/helix-der.html).</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="thumb">Image</div>
+        <h3><a href="#">Solar Testbed (DOE/WVHTF)</a></h3>
+        <p>PV-based DER-OMS development; cloud tracking and PV generation estimation.</p>
+      </article>
+
+      <article class="card">
+        <div class="thumb">Image</div>
+        <h3><a href="#">US-India UI-ASSIST</a></h3>
+        <p>Testbed, applications, and tools for microgrids/active distribution systems with cyber-security measures.</p>
+      </article>
+
+      <article class="card">
+        <div class="thumb">Image</div>
+        <h3><a href="#">Holonic Control (aDaptioN)</a></h3>
+        <p>Delay-aware, fault-tolerant holonic control and optimization for networked CPS.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> Md Fazley Rafy</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
