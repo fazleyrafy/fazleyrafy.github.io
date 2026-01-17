@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Md Fazley Rafy</title>
+  <meta name="description" content="Contact information for Md Fazley Rafy - PhD Candidate at West Virginia University." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Specific styles for the Contact page */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-card {
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+    }
+
+    .contact-item h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .contact-item a {
+      font-size: 1.05em;
+      color: #0b57d0;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .social-btn:hover {
+      background: #0b57d0;
+      color: #fff;
+      border-color: #0b57d0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-row">
+        <div class="title">
+          <h1>Md Fazley Rafy</h1>
+          <div class="subtitle">Ph.D. Candidate (Computer Science) • Cyber-Physical Systems • Smart Grid Resilience</div>
+        </div>
+
+        <div class="logo-box" aria-label="University logos" style="height: 60px; display: flex; align-items: center; justify-content: flex-end; background: transparent; gap: 15px;">
+           <img src="assets/wvu-logo.jpg" alt="West Virginia University" style="max-height: 50px; width: auto;" />
+           <img src="assets/du_logo.png" alt="Dhaka University" style="max-height: 50px; width: auto;" />
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <div class="container">
+        <div class="nav-row">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="news.html">News</a>
+          <a href="cv.html">CV</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap content container">
+    <h2>Get in Touch</h2>
+    <hr style="border:none; border-top:1px solid #e6e6e6; margin:22px 0">
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>I am always open to discussing research collaborations, opportunities in Cyber-Physical Systems security, or questions about my work.</p>
+        
+        <div class="contact-card">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:mr0056@mix.wvu.edu">mr0056@mix.wvu.edu</a> 
+          </div>
+
+          <div class="contact-item">
+            <h3>Lab / Office</h3>
+            <p style="margin:0; color:#555;">
+              Advanced Engineering Research Building (AERB)<br>
+              West Virginia University<br>
+              Morgantown, WV 26506, USA
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <h3>Connect & Follow</h3>
+        <p style="font-size: 0.95em; color: #666; margin-bottom: 20px;">
+          Find my latest research, code repositories, and professional updates on these platforms.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <a href="https://www.linkedin.com/in/md-fazley-rafy/" target="_blank" class="social-btn">LinkedIn Profile</a>
+          <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="social-btn">Google Scholar</a>
+          <a href="https://github.com/YOUR_USERNAME" target="_blank" class="social-btn">GitHub Repositories</a>
+          <a href="https://www.researchgate.net/profile/Md-Fazley-Rafy" target="_blank" class="social-btn">ResearchGate</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap container">© <span id="year"></span> Md Fazley Rafy</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
